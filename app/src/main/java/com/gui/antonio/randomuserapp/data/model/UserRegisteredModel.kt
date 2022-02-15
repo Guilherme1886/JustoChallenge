@@ -1,5 +1,5 @@
 package com.gui.antonio.randomuserapp.data.model
 
-class UserRegisteredModel {
-
-}
+data class UserRegisteredModel(
+    val date: String? = null
+)

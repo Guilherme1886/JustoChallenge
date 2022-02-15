@@ -14,8 +14,9 @@ class UserViewModel(
     var userResultsLiveData: LiveData<MutableList<UserUiModel>> = _userResultsLiveData
 
     fun getUsers() {
-        val results = getUserResultsUseCase()
-        _userResultsLiveData.value = results
+        getUserResultsUseCase {
+            _userResultsLiveData.postValue(it)
+        }
     }
 
 }

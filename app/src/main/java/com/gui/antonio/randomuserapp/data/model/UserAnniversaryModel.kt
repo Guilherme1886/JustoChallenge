@@ -1,5 +1,5 @@
 package com.gui.antonio.randomuserapp.data.model
 
-class UserAnniversaryModel {
-
-}
+data class UserAnniversaryModel(
+    val age: Int? = null
+)

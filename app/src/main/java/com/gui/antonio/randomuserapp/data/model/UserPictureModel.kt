@@ -1,5 +1,7 @@
 package com.gui.antonio.randomuserapp.data.model
 
-class UserPictureModel {
-
-}
+data class UserPictureModel(
+    val large: String? = null,
+    val medium: String? = null,
+    val thumbnail: String? = null
+)

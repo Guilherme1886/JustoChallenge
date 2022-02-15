@@ -1,5 +1,5 @@
 package com.gui.antonio.randomuserapp.data.model
 
-class UserLoginModel {
-
-}
+data class UserLoginModel(
+    val username: String? = null
+)
