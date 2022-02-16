@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">RandomUserApp</string>
+    <string name="info_about_user">I am %s %s %s from %s, %s, %s. My email is %s, i have %d years and i am have my register since %s</string>
+
 </resources>

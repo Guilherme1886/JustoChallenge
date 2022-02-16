@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_margin="18dp">
 
     <ImageView
         android:id="@+id/imageView"
@@ -22,7 +23,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:fontFamily="cursive"
+        android:fontFamily="sans-serif-condensed"
         android:text="I am title, first, last from city, state, country. My email is email, i have age and i am have my register since date"
         android:textAlignment="center"
         android:textSize="24sp"

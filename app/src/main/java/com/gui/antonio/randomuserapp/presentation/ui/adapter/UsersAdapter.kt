@@ -1,4 +1,4 @@
-package com.gui.antonio.randomuserapp.presentation.ui
+package com.gui.antonio.randomuserapp.presentation.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -8,7 +8,7 @@ import com.gui.antonio.randomuserapp.databinding.ItemUserBinding
 import com.gui.antonio.randomuserapp.presentation.model.UserUiModel
 import com.gui.antonio.randomuserapp.presentation.ui.viewholder.UserViewHolder
 
-class UsersAdapter : ListAdapter<UserUiModel, UserViewHolder>(UserDiffUtilCallback) {
+class UsersAdapter : ListAdapter<UserUiModel, UserViewHolder>(UserDiffUtilCallback()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserViewHolder {
         return UserViewHolder(
@@ -20,16 +20,6 @@ class UsersAdapter : ListAdapter<UserUiModel, UserViewHolder>(UserDiffUtilCallba
 
     override fun onBindViewHolder(holder: UserViewHolder, position: Int) {
         holder.bind(getItem(position))
-    }
-
-    object UserDiffUtilCallback : DiffUtil.ItemCallback<UserUiModel>() {
-        override fun areItemsTheSame(oldItem: UserUiModel, newItem: UserUiModel): Boolean {
-            return oldItem.id == newItem.id
-        }
-
-        override fun areContentsTheSame(oldItem: UserUiModel, newItem: UserUiModel): Boolean {
-            return oldItem == newItem
-        }
     }
 }
 
